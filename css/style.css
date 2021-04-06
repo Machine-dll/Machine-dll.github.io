@@ -69,7 +69,7 @@ img {
   border-style: none;
 }
 
-*, ::before, ::after, :active :hover {
+*, ::before, ::after, :active, :hover {
   transition: 0.3s;
 }
 
@@ -119,7 +119,7 @@ fill: #fff;
 width: 64px;
 height: 56px;
 margin: 0 2px 0 0;
-transition: 0.3s;
+/*transition: 0.3s;*/
 }
 
 .brand-title {
@@ -130,7 +130,7 @@ transition: 0.3s;
   text-align: right;
   letter-spacing: -1.36px;
   padding: 0 0 0 0;
-  transition: 0.3s;
+  /*transition: 0.3s;*/
 }
 
 /* ------------------------- M E N U------------------------- */
