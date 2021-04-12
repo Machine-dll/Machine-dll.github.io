@@ -160,6 +160,11 @@ margin: 0 2px 0 0;
   margin: 0 63px 0 0;
 }
 
+.page-header-menu-item {
+  margin: 0;
+    list-style-type: none;
+}
+
 .navigation-item:hover {
   color: #c7b299;
 }
@@ -838,6 +843,10 @@ color: #c7b299;
   display: block;
 }
 
+.mobile-site {
+  display: none;
+}
+
 /*------------------------M O B I L E------------------------*/
 
 .mobile {
@@ -848,7 +857,6 @@ background-color: #fbfaf8;
 }
 
 .mobile-image {
-display: block;
 margin: 0 30px 0 0;
 }
 
@@ -876,19 +884,23 @@ margin: 0 30px 0 0;
 }
 
 .mobile-list {
+line-height: 32px;
 margin: 0 0 0 0;
 padding: 0 0 0 51px;
 }
 
 .mobile-item {
+  position: relative;
   font-family: "montserrat", sans-serif;
   font-size: 16px;
   line-height: 32px;
   font-weight: 300;
   color: #8c8c8c;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 0 10px 0;
+  padding: 0 0 0 0;
 }
 
 .mobile-item:before {
@@ -1453,6 +1465,357 @@ color: #555555;
   padding: 0 0 0 0;
 }
 
-.links-item-text {
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+
+@media (max-width: 576px) {
+  html,
+  body {
+      width: 100%;
+  }
+
+  .wrp {
+flex-wrap:wrap;
+margin: 0 0 0 0;
+padding: 20px 20px;
+}
+
+.brand {
+margin: 0;
+justify-content: flex-start;
+}
+.navigation {
+flex-wrap:wrap;
+}
+
+.navigation-list {
+flex-wrap:wrap;
+}
+
+.slider {
+display: none;
+}
+
+.specials {
+flex-wrap: wrap;
+padding: 40px 80px;
+justify-content: center;
+}
+
+.special {
+margin: 0 0 80px 0;
+}
+
+.specials :nth-child(4) {
+margin: 0;
+}
+
+.ideas {
+display: none;
+}
+
+.offer {
+display: none;
+}
+
+.projects {
+padding: 40px 40px;
+}
+
+.gallery {
+justify-content: center;
+}
+
+.card {
+margin: 0 0 50px 0;
+}
+
+.card:nth-child(3n) {
+  margin: 0 0 50px 0;
+}
+
+.presentation {
+display: none;
+}
+
+
+.desktop-site {
+        display: none;
+    }
+    .mobile-site {
+        display: block;
+    }
+    .mobile {
+        padding: 5em 2em 0 2em;
+        text-align: center;
+    }
+    .mobile-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .mobile-title {
+        font-size: 25px;
+        margin: 0 0 15px 0;
+    }
+    .mobile-text {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .mobile-image {
+        max-width: 50%;
+        margin: 0 20px 0 0;
+    }
+.mobile-list {
+        text-align: left;
+        font-size: 12px;
+        display: block;
+        max-width: 50%;
+        padding: 0 0 0 10px;
+        line-height: 20px;
+        box-sizing: border-box;
+    }
+
+    .mobile-item {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    .mobile-item::before {
+        position: absolute;
+        left: -2.5em;
+    }
+
+
+.counters {
+padding: 40px 80px;
+flex-wrap:wrap;
+justify-content:center
+}
+
+.counter {
+max-width: 50%;
+margin:0 0 60px 0;
+}
+
+.recent {
+padding: 40px 80px;
+}
+
+.post-wrapper {
+justify-content:center;
+}
+
+
+.partners {
+padding: 4em 4em 4em 4em;
+}
+
+.footer {
+padding: 5em 2em 3em 2em;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.brand-footer {
+margin: 0 0 30px 0;
+}
+
+.footer-element {
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.footer-element1 {
+max-width: 45%;
+    margin: 0 10px 0 0;
+    text-align: left;
+}
+
+.footer-element1:last-child {
+display: none;
+}
+
+
+.footer-text {
+margin: 0 0 20px 0;
+}
+
+.twitter-post {
+    padding: 0 0 0px 0;
+    margin: 0 0 15px 0;
+}
+
+.footer-element1:nth-child(3n) {
+margin: 0 0 0 0;
+}
+
+.footer-links {
+padding: 30px 20px 30px 20px;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+
+.links:first-child {
+    margin: 0 0 30px 0;
+}
+
+/*---------------------------- MENU------------------------- */
+
+.header {
+  background-size: cover;
+  flex-wrap: wrap;
+  box-sizing:border-box;
+}
+
+.wrp {
+  padding:20px;
+  box-sizing:border-box;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  margin: 0;
+  position: relative;
+}
+
+
+#menu__toggle {
+  opacity: 0;
+  position: absolute;
+  right: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+  top: 10px;
+  right: 16px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__btn{
+  position: fixed;
+  z-index: 10;
+}
+
+#menu__toggle:checked ~ .navigation 
+> .navigation-list  {
+  visibility: visible;
+  right: 0;
+  height: 100vh;
+  border-radius: 0;
+  padding: 40px 30% 40px 30%;
+  opacity: .9;
+  align-items: flex-end;
+  z-index: 9;
+}
+
+.menu__btn {
+  display: flex;
+  position: absolute;
+  top: 35px;
+  left: 90%;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  transition-duration: .4s;
+}
+
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  right: -200%;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  background-color: #333;
+  opacity: .4;
+  transition: .2s;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 1;
+  height: 5vh;
+  font-size: 1em;
+  border-radius: 50%;
+}
+
+.navigation-item {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin: 0 71px 12px 0;
+  font-size: 16px;
+}
+
+.navigation-btn {
+  margin: 0px 0px 0px 0px;
+    top: 59px;
+    left: 524px;
+    position: absolute;
+}
+
+.form {
+  top: 26px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    left: 288px;
+    position: relative;
+}
+
+.search {
+  position: absolute;
+    font-weight: 300;
+    width: 320px;
+    color: #fff;
+    left: -285px;
+    top: -200px;
+    opacity: 0;
+    border: 1px solid #fff;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+
+
+
+
 
 }
