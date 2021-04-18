@@ -914,7 +914,7 @@ padding: 0 0 0 51px;
   margin: 0 30px 0 0;
 }
 
-/*------------------------M O B I L E------------------------*/
+/*------------------------counters------------------------*/
 
 .counters {
 background-color: #f4f5f8;
@@ -1243,7 +1243,7 @@ transform: scale(1.2);
 }
 
 .partner-img {
-display: block;
+/*display: block;*/
 }
 
 .partner-img:hover {
@@ -1541,53 +1541,59 @@ margin: 0 0 50px 0;
 display: none;
 }
 
+.mobile-site {
+  display: block;
+  }
 
 .desktop-site {
-        display: none;
-    }
-    .mobile-site {
-        display: block;
-    }
-    .mobile {
-        padding: 5em 2em 0 2em;
-        text-align: center;
-    }
-    .mobile-content {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .mobile-title {
-        font-size: 25px;
-        margin: 0 0 15px 0;
-    }
-    .mobile-text {
-        font-size: 12px;
-        line-height: 24px;
-    }
-    .mobile-image {
-        max-width: 50%;
-        margin: 0 20px 0 0;
-    }
-.mobile-list {
-        text-align: left;
-        font-size: 12px;
-        display: block;
-        max-width: 50%;
-        padding: 0 0 0 10px;
-        line-height: 20px;
-        box-sizing: border-box;
-    }
-
-    .mobile-item {
-    font-size: 14px;
-    line-height: 20px;
+display: none;
 }
 
-    .mobile-item::before {
-        position: absolute;
-        left: -2.5em;
+.mobile {
+padding: 5em 2em 0 2em;
+text-align: center;
+}
+
+.mobile-content {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
     }
+
+.mobile-title {
+font-size: 25px;
+margin: 0 0 15px 0;
+}
+
+.mobile-text {
+font-size: 12px;
+line-height: 24px;
+}
+
+.mobile-image {
+max-width: 50%;
+margin: 0 20px 0 0;
+}
+
+.mobile-list {
+text-align: left;
+font-size: 12px;
+display: block;
+max-width: 50%;
+padding: 0 0 0 10px;
+line-height: 20px;
+box-sizing: border-box;
+}
+
+.mobile-item {
+font-size: 14px;
+line-height: 20px;
+}
+
+.mobile-item::before {
+position: absolute;
+left: -2.5em;
+}
 
 
 .counters {
